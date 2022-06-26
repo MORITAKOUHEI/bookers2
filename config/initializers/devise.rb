@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'd90eb9f6f78d60acfa380ee5b302d55247eb8eb857eb2abb86da23cf7037a486d0e2290280debb219cef71ec0c7580b7a90116b3a55e2f65ba0bc2ca738dcb04'
+  # config.secret_key = 'ce9806c1c02dc59b76fb49ab7dee9ff4d80aafdd7c6b4bb464b5ac605599c687e917105a27f944931f8bac1a4aa63a49f388ec53fd39919e9c80c3e993e7f82e'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '0ecba034f71500eff9ea3a6453e37bc58498a5260272931d89815f519d59807b217c9f26788cf3295699846f2e7a528daf1ea650c8973dba419cb030d08f1c3a'
+  # config.pepper = 'e4cf44602819cfa9b5fc4b8e13fe8585d4d01ca14295d13f81f31d5c10579be38490b79c749845cd5054eb7e8706ffd0dda0aa5b6f089362e303d04fecd015a0'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -167,7 +167,7 @@ Devise.setup do |config|
   # config.remember_for = 2.weeks
 
   # Invalidates all the remember me tokens when the user signs out.
-  config.expire_all_remember_me_on_sign_out = true
+  config.expire_all_remember_me_on_sign_out = false
 
   # If true, extends the user's remember period when remembered via cookie.
   # config.extend_remember_period = false
@@ -244,7 +244,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  config.scoped_views = true
+  # config.scoped_views = false
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
